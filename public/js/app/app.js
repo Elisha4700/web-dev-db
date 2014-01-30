@@ -1,0 +1,1 @@
+var WDB = angular.module('WDB', []);
