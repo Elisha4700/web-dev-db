@@ -42,6 +42,18 @@ app.get('/(about)?', function(req, res){
 	res.render('index.html');
 });
 
+app.get('/search', function(req, res){
+	var items = [
+		{name:"A"},
+		{name:"B"},
+		{name:"C"},
+		{name:"D"},
+		{name:"E"},
+		{name:"F"},
+	];
+	res.json(items);
+});
+
 //app.get('/about', function (req, res) {
 //	res.render('about.html');
 //});

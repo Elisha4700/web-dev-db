@@ -11,17 +11,19 @@
 	<script type="text/javascript" src="components/angular-route/angular-route.js"></script>
 
 	<script type="text/javascript" src="js/app/ng-app.js"></script>
+	<script type="text/javascript" src="js/services/SearchSrv.js"></script>
 	<script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
 </head>
 <body ng-controller="MainCtrl">
 
 	<h1>Hi and welcome to Web Dev DataBase! :)</h1>
 
-	<button ng-click="addStuff()"></button>
+	<button ng-click="addStuff()">+ Add New Stuff</button>
+	<button ng-click="showEverything()">Show Everything</button>
 
 	<input type="text" ng-model="search.value" ng-change="onSearching()"/>
 
-	<ng-view></ng-view>
+	<!--<ng-view></ng-view>-->
 
 </body>
 </html>
