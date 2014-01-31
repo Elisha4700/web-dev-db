@@ -1,4 +1,4 @@
-WDB.controller('MainCtrl', ['$scope', 'SearchSrv', function ($scope, SearchSrv) {
+WDB.controller('MainCtrl', ['$scope', '$location', 'SearchSrv', function ($scope, $location, SearchSrv) {
 	"use strict";
 
 	$scope.results = {
@@ -7,6 +7,7 @@ WDB.controller('MainCtrl', ['$scope', 'SearchSrv', function ($scope, SearchSrv) 
 
 	$scope.addStuff = function() {
 		console.debug("Open Add more stuff Dialog");
+		$location.path('/new');
 	};
 
 	$scope.showEverything = function() {
@@ -19,7 +20,9 @@ WDB.controller('MainCtrl', ['$scope', 'SearchSrv', function ($scope, SearchSrv) 
 			function(result) {
 				console.debug("Error: ", result);
 			}
-		)
+		);
+
+		$location.path("/");
 	};
 
 	$scope.onSearching = function() {

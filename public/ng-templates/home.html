@@ -1,7 +1,7 @@
-<h1>This is "home.html"</h1>
-
-
+<h1>Results</h1>
 
 <ul>
-	<li><a href="/list">List of all </a></li>
+	<li ng-repeat="item in results.items">
+		{{item.name}}
+	</li>
 </ul>

@@ -42,6 +42,10 @@ app.get('/(about)?', function(req, res){
 	res.render('index.html');
 });
 
+app.get('/(new)?', function(req, res){
+	res.render('index.html');
+});
+
 app.get('/search', function(req, res){
 	var items = [
 		{name:"A"},

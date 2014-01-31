@@ -21,6 +21,10 @@ WDB.config(function($locationProvider, $routeProvider) {
 		templateUrl: templ + 'about.html',
 //		controller: 'AboutCtrl'
 	})
+		.when('/new', {
+			templateUrl: templ + 'add-new.html',
+			controller: 'AddNewCtrl'
+		})
 //
 //	// Thers is no menu refrance for this - you can get to it only when opening a contextual video from AO.
 //	.when('/contextual', {

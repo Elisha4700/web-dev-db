@@ -10,9 +10,17 @@
 	<script type="text/javascript" src="components/angular/angular.js"></script>
 	<script type="text/javascript" src="components/angular-route/angular-route.js"></script>
 
+	<!-- Application Bootstraping -->
 	<script type="text/javascript" src="js/app/ng-app.js"></script>
+
+	<!-- Services -->
 	<script type="text/javascript" src="js/services/SearchSrv.js"></script>
+
+	<!-- Controllers -->
 	<script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/AddNewCtrl.js"></script>
+
+
 </head>
 <body ng-controller="MainCtrl">
 
@@ -23,7 +31,7 @@
 
 	<input type="text" ng-model="search.value" ng-change="onSearching()"/>
 
-	<!--<ng-view></ng-view>-->
+	<ng-view></ng-view>
 
 </body>
 </html>
