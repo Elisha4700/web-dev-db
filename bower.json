@@ -7,6 +7,6 @@
     "components"
   ],
   "dependencies": {
-    "angular": "~1.2.11-build.2192"
+    "angular": "~1.2.8"
   }
 }
