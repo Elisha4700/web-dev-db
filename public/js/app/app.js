@@ -2,7 +2,7 @@
  * WDB - WebDevDB
  * @type {module|*|test.module|details.module|.location.module|b.angular.module}
  */
-var WDB = angular.module('WDB', []);
+var WDB = angular.module('WDB', ['ngRoute']);
 
 WDB.config(function($locationProvider, $routeProvider) {
 	"use strict";
