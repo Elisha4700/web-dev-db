@@ -42,7 +42,7 @@ Thumbs.db
 #####################
 .idea
 .sass-cache
-node_modules/
+node_modules
 public/components
-projectFilesBackup/
+projectFilesBackup
 
