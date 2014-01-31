@@ -2,16 +2,22 @@
 <html lang="en-US" ng-app="WDB">
 <head>
 	<meta charset="UTF-8">
-	<title>Express</title>
+	<title>Web Dev DataBase</title>
+
+	<script type="text/javascript" src="js/common/config.js"></script>
+	<script type="text/javascript" src="js/common/utils.js"></script>
 
 	<script type="text/javascript" src="components/angular/angular.js"></script>
 	<script type="text/javascript" src="components/angular-route/angular-route.js"></script>
 
-	<script type="text/javascript" src="js/app/app.js"></script>
+	<script type="text/javascript" src="js/app/ng-app.js"></script>
 	<script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
 </head>
 <body ng-controller="MainCtrl">
 
-	<h1>Hi and welcome to express! :)</h1>
+	<h1>Hi and welcome to Web Dev DataBase! :)</h1>
+
+	<ng-view></ng-view>
+
 </body>
 </html>

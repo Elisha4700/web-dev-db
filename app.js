@@ -33,19 +33,18 @@ app.configure('development', function () {
 	app.use(express.errorHandler());
 });
 
-
 //app.get('/', routes.index);
 //app.get('/about', function (req, res) {
 //	res.render('about.html');
 //});
 
-app.get('/', function(req, res){
+app.get('/(about)?', function(req, res){
 	res.render('index.html');
 });
 
-app.get('/about', function (req, res) {
-	res.render('about.html');
-});
+//app.get('/about', function (req, res) {
+//	res.render('about.html');
+//});
 
 
 
