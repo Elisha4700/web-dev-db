@@ -19,7 +19,7 @@ WDB.config(function($locationProvider, $routeProvider) {
 	// Channels are renamed to: "My Subscriptions"
 	.when('/about', {
 		templateUrl: templ + 'about.html',
-		controller: 'AboutCtrl'
+//		controller: 'AboutCtrl'
 	})
 //
 //	// Thers is no menu refrance for this - you can get to it only when opening a contextual video from AO.
