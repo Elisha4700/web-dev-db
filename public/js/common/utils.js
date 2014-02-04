@@ -1,1 +1,0 @@
-function noop() { /* Silence is golden */ }

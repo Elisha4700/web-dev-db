@@ -1,73 +1,100 @@
 'use strict';
 
-var request = require('request');
-
-module.exports = function (grunt) {
-  // show elapsed time at the end
-  require('time-grunt')(grunt);
-  // load all grunt tasks
-  require('load-grunt-tasks')(grunt);
-
-  var reloadPort = 35729, files;
-
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    develop: {
-      server: {
-        file: 'app.js'
-      }
-    },
-    watch: {
-      options: {
-        nospawn: true,
-        livereload: reloadPort
-      },
-      server: {
-        files: [
-          'app.js',
-          'routes/*.js'
-        ],
-        tasks: ['develop', 'delayed-livereload']
-      },
-      js: {
-        files: ['public/js/*.js'],
-        options: {
-          livereload: reloadPort
+module.exports = function(grunt) {
+    // Project Configuration
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        watch: {
+            jade: {
+                files: ['app/views/**'],
+                options: {
+                    livereload: true,
+                },
+            },
+            js: {
+                files: ['gruntfile.js', 'server.js', 'app/**/*.js', 'public/js/**', 'test/**/*.js'],
+                tasks: ['jshint'],
+                options: {
+                    livereload: true,
+                },
+            },
+            html: {
+                files: ['public/views/**'],
+                options: {
+                    livereload: true,
+                },
+            },
+            css: {
+                files: ['public/css/**'],
+                options: {
+                    livereload: true
+                }
+            }
+        },
+        jshint: {
+            all: {
+                src: ['gruntfile.js', 'server.js', 'app/**/*.js', 'public/js/**', 'test/**/*.js'],
+                options: {
+                    jshintrc: true
+                }
+            }
+        },
+        nodemon: {
+            dev: {
+                options: {
+                    file: 'server.js',
+                    args: [],
+                    ignoredFiles: ['public/**'],
+                    watchedExtensions: ['js'],
+                    nodeArgs: ['--debug'],
+                    delayTime: 1,
+                    env: {
+                        PORT: 3000
+                    },
+                    cwd: __dirname
+                }
+            }
+        },
+        concurrent: {
+            tasks: ['nodemon', 'watch'],
+            options: {
+                logConcurrentOutput: true
+            }
+        },
+        mochaTest: {
+            options: {
+                reporter: 'spec',
+                require: 'server.js'
+            },
+            src: ['test/mocha/**/*.js']
+        },
+        env: {
+            test: {
+                NODE_ENV: 'test'
+            }
+        },
+        karma: {
+            unit: {
+                configFile: 'test/karma/karma.conf.js'
+            }
         }
-      },
-      css: {
-        files: ['public/css/*.css'],
-        options: {
-          livereload: reloadPort
-        }
-      },
-      jade: {
-        files: ['views/*.jade'],
-        options: {
-          livereload: reloadPort
-        }
-      }
-    }
-  });
+    });
 
-  grunt.config.requires('watch.server.files');
-  files = grunt.config('watch.server.files');
-  files = grunt.file.expand(files);
+    //Load NPM tasks 
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-mocha-test');
+    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-nodemon');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-env');
 
-  grunt.registerTask('delayed-livereload', 'Live reload after the node server has restarted.', function () {
-    var done = this.async();
-    setTimeout(function () {
-      request.get('http://localhost:' + reloadPort + '/changed?files=' + files.join(','),  function (err, res) {
-          var reloaded = !err && res.statusCode === 200;
-          if (reloaded) {
-            grunt.log.ok('Delayed live reload successful.');
-          } else {
-            grunt.log.error('Unable to make a delayed live reload.');
-          }
-          done(reloaded);
-        });
-    }, 500);
-  });
+    //Making grunt default to force in order not to break the project.
+    grunt.option('force', true);
 
-  grunt.registerTask('default', ['develop', 'watch']);
+    //Default task(s).
+    grunt.registerTask('default', ['jshint', 'concurrent']);
+
+    //Test task.
+    grunt.registerTask('test', ['env:test', 'mochaTest', 'karma:unit']);
 };
