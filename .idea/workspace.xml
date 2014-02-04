@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="affece93-8f2e-4c30-89e3-1181fe3e4dbf" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\READEME.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\js\app\ng-app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\js\common\config.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\js\common\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\js\controllers\AddNewCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\js\controllers\MainCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\js\services\SearchSrv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\ng-templates\about.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\ng-templates\add-new.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\ng-templates\home.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\scss\_globals.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\scss\_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\public\scss\general.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\routes\about.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\routes\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\routes\routes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\routes\user.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\views\about.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\views\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\views\index.jade" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Elisha\Documents\Projects\web-dev-db\views\layout.jade" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gruntfile.js" afterPath="$PROJECT_DIR$/gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/article.js" afterPath="$PROJECT_DIR$/app/models/article.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="web-dev-db.iws" />
@@ -51,17 +24,7 @@
     <favorites_list name="web-dev-db" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="23" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.5345912" vertical-offset="1086" max-vertical-offset="2634">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -79,7 +42,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/common.js/config.js" />
         <option value="$PROJECT_DIR$/public/ng-templates/about.html" />
         <option value="$PROJECT_DIR$/public/js/app/app.js" />
         <option value="$PROJECT_DIR$/public/js/common/utils.js" />
@@ -95,6 +57,7 @@
         <option value="$PROJECT_DIR$/public/ng-templates/add-new.html" />
         <option value="$PROJECT_DIR$/public/ng-templates/home.html" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/models/article.js" />
       </list>
     </option>
   </component>
@@ -159,6 +122,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-dev-db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-dev-db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-dev-db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-dev-db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,13 +277,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1870" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14239483" sideWeight="0.67001003" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14239483" sideWeight="0.67001003" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -342,9 +337,16 @@
         <state line="43" column="11" selection-start="518" selection-end="518" vertical-scroll-proportion="0.536157" vertical-offset="384" max-vertical-offset="1955" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="23" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.5345912" vertical-offset="1086" max-vertical-offset="2634">
+        <state line="48" column="33" selection-start="1456" selection-end="1456" vertical-scroll-proportion="1.0566038" vertical-offset="0" max-vertical-offset="2655">
           <folding />
         </state>
       </provider>
